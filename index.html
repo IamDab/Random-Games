@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Games</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .game-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .game-card h2 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Game Projects</h1>
+  </header>
+
+  <section class="game-grid">
+    <a href="sliding-puzzle.html" class="game-card">
+      <img src="images/sliding-puzzle.jpg" alt="Sliding Puzzle">
+      <h2>Sliding Puzzle</h2>
+    </a>
+
+    <a href="memory-match.html" class="game-card">
+      <img src="images/memory-match.jpg" alt="Memory Match">
+      <h2>Memory Match</h2>
+    </a>
+
+    <a href="tic-tac-toe.html" class="game-card">
+      <img src="images/tic-tac-toe.jpg" alt="Tic Tac Toe">
+      <h2>Tic Tac Toe</h2>
+    </a>
+
+    <a href="snake.html" class="game-card">
+      <img src="images/snake.jpg" alt="Snake Game">
+      <h2>Snake</h2>
+    </a>
+
+    <!-- Add more game cards here -->
+  </section>
+
+</body>
+</html>
