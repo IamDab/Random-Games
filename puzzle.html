@@ -161,7 +161,18 @@
                 }
             }
             if (isSolved) {
-                alert("You solved the puzzle!");
+                const winImage = document.createElement("img");
+                winImage.src = "/assets/image/qrcode-clue.png"; // use your image URL or local path
+                winImage.alt = "You solved it!";
+                winImage.style.width = "200px"; // adjust as needed
+                winImage.style.marginTop = "20px";
+
+                // Optionally remove any old win image first
+                const existingImg = document.getElementById("win-image");
+                if (existingImg) existingImg.remove();
+
+                winImage.id = "win-image";
+                document.body.appendChild(winImage);
             }
         }
 
